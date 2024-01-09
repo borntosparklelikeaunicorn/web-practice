@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,33 +10,36 @@
     <link rel="stylesheet" href="./index.css">
     <title>Товары</title>
 </head>
-<body>
-<header>
-    <div class="left-header">
-        <p>Мария Макарова 6407</p>
-    </div>
-    <div class="right-header">
-        <button class="button" onclick="resetPage()">
-            <div>Сброс</div>
-        </button>
-    </div>
-</header>
 
-<div class="main-page">
-    <div class="main-page form-container">
-        <h2>Форма добавления карточки товара</h2>
-        <form class="product-form" id="productForm">
-            <input type="text" placeholder="Название" id="name" name="name">
-            <input type="url" placeholder="Ссылка на изображение" id="img" name="img">
-            <textarea placeholder="Описание" id="description" name="description"></textarea>
-            <input type="text" placeholder="Код товара" id="code" name="code">
-            <input type="text" placeholder="Поставщик" id="provider" name="provider">
-            <button class="button" onclick="saveProduct()">Сохранить</button>
-        </form>
+<body>
+    <div id="loader" class="loader"></div>
+    <header>
+        <div class="left-header">
+            <p id="creatorInfo"></p>
+        </div>
+        <div class="right-header">
+            <button class="button" onclick="resetPage()">
+                <div>Сброс</div>
+            </button>
+        </div>
+    </header>
+
+    <div class="main-page">
+        <div class="main-page form-container">
+            <h2>Форма добавления карточки товара</h2>
+            <form class="product-form" id="productForm">
+                <input type="text" placeholder="Название" id="name" name="name">
+                <input type="url" placeholder="Ссылка на изображение" id="img" name="img">
+                <textarea placeholder="Описание" id="description" name="description"></textarea>
+                <input type="text" placeholder="Код товара" id="code" name="code">
+                <input type="text" placeholder="Поставщик" id="provider" name="provider">
+                <button class="button" id="save" onclick="saveProduct()">Сохранить</button>
+            </form>
+        </div>
+
+        <div class="cards-container" id="cardsContainer"></div>
     </div>
-    
-    <div class="cards-container" id="cardsContainer"></div>
-</div>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
