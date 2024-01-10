@@ -1,0 +1,66 @@
+.container {
+  padding: 12px 32px;
+  width: 100%;
+  overflow: auto;
+}
+
+section > form > button {
+  margin-top: 20px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.titleInputs {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.inputs {
+  width: 30%;
+  height: 44px;
+  margin-right: 16px;
+  padding: 0 16px;
+  color: rgba(0, 0, 0, 0.7);
+  background: #ecf1f7;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.46);
+  }
+}
+
+.inputsTextarea {
+  width: 60%;
+  height: 150px;
+  margin-right: 16px;
+  padding: 16px 16px;
+  color: rgba(0, 0, 0, 0.7);
+  background: #ecf1f7;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.46);
+  }
+}
+
+.genresList {
+  max-width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
