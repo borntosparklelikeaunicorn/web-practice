@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow: auto;
+  margin: 16px 0;
+  padding-right: 9px;
+}
+
+.listItem {
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.currentList {
+  background: #6e87e1;
+}
